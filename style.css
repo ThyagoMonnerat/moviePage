@@ -1,0 +1,348 @@
+@font-face {
+  font-family: 'sofia';
+  src: url('./assets/font/sofiapro-light.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --primary-color: #24a3ff;
+}
+
+html {
+  font-family: 'sofia';
+}
+
+body {
+  height: 130rem;
+  background-image: url('./assets/godzillaBg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: white;
+}
+
+.generalContainer {
+  width: 100%;
+  height: 100%;
+
+  padding-inline: 8rem;
+}
+
+/* ------------- HEADER------------- */
+.headerBarContainer {
+  width: 100%;
+  height: 20.1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ------------- LEFTSIDE ------------- */
+.leftSideHeaderBar {
+  width: 41.5rem;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.leftSideHeaderBar a {
+  text-decoration: none;
+  font-size: 2.2rem;
+  color: white;
+}
+
+.leftSideHeaderBar a:first-child {
+  margin-right: 1.7vw;
+}
+
+.leftSideHeaderBar a p::after {
+  content: '';
+
+  width: 0%;
+  height: 0.3rem;
+  background: var(--primary-color);
+
+  display: block;
+  margin-top: 0.2rem;
+  margin-inline: auto;
+
+  transition: width 400ms;
+}
+
+a:hover p::after {
+  width: 100%;
+  margin-inline: auto;
+}
+
+/* ------------- TITLE ------------- */
+.titleContianer {
+  width: 23.1rem;
+}
+
+.titleContianer h1 {
+  font-family: 'Oswald';
+  font-size: 5.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+
+  display: flex;
+
+  text-shadow: 0 0 25px rgb(17, 0, 255);
+}
+
+.titleContianer span::after {
+  content: '';
+
+  width: 2.1rem;
+  height: 0.5rem;
+  background: var(--primary-color);
+
+  display: block;
+  position: relative;
+  top: -5.7rem;
+}
+
+/* ------------- RIGHTSIDE ------------- */
+.rightSideHeaderBar {
+  width: 41.5rem;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rightSideHeaderBar a img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.rightSideHeaderBar a {
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.rightSideHeaderBar a p::after {
+  content: '';
+
+  width: 0%;
+  height: 0.3rem;
+  background: var(--primary-color);
+
+  display: block;
+  margin-top: 0.2rem;
+  margin-inline: auto;
+
+  transition: width 400ms;
+}
+
+.rightSideHeaderBar a:hover p::after {
+  width: 100%;
+  margin-inline: auto;
+}
+
+/* ------------- SECTION ------------- */
+.sectionContainer {
+  width: 58.1rem;
+  height: 57.5rem;
+
+  margin-bottom: 9.2rem;
+}
+
+/* ------------- TTILEMOVIE ------------- */
+.infoSectionContent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4.5rem;
+}
+
+.infoSectionContent p:first-child {
+  font-family: 'Oswald';
+  font-size: 13.2rem;
+  font-weight: bold;
+}
+
+.infoSectionContent p:nth-child(2) {
+  font-family: 'Oswald';
+  font-size: 5.2rem;
+  font-weight: bold;
+}
+
+.infoSectionContent span {
+  font-family: 'Oswald';
+  font-weight: 300;
+}
+
+/* ------------- SINOPSE ------------- */
+.sinopseContainer {
+  font-weight: 400;
+  font-size: 2.2rem;
+  letter-spacing: 0.17em;
+}
+
+/* ------------- STARRATE ------------- */
+.rateContainer {
+  width: fit-content;
+  margin-block: 6rem;
+  direction: rtl;
+}
+
+.rateContainer svg {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.rateContainer svg:hover {
+  background-image: url('./assets/starRated.png');
+  background-size: cover;
+
+  transform: scale(1.3);
+}
+
+.s1:hover ~ svg {
+  background-image: url('./assets/starRated.png');
+  background-size: cover;
+}
+
+.s2:hover ~ svg {
+  background-image: url('./assets/starRated.png');
+  background-size: cover;
+}
+
+.s3:hover ~ svg {
+  background-image: url('./assets/starRated.png');
+  background-size: cover;
+}
+
+.s4:hover ~ svg {
+  background-image: url('./assets/starRated.png');
+  background-size: cover;
+}
+
+.s5:hover ~ svg {
+  background-image: url('./assets/starRated.png');
+  background-size: cover;
+}
+
+/* ------------- SECTIONFOOTER ------------- */
+.footerSectionContainer {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+/* ------------- SECTIONFOOTERBUTTON ------------- */
+.footerSectionContainer button {
+  width: 23.8rem;
+  height: 6rem;
+  background-color: var(--primary-color);
+  border-radius: 3rem;
+  border: none;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.footerSectionContainer button:active {
+  background-color: #2391e0;
+}
+
+.footerSectionContainer svg {
+  width: 2.9rem;
+  height: 2.9rem;
+  margin-inline: 2.5rem;
+}
+
+.footerSectionContainer button p {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* ------------- SECTIONFOOTERTEXT ------------- */
+.footerSectionContainer a {
+  color: var(--primary-color);
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.footerSectionContainer a:hover {
+  color: #208cda;
+}
+
+/* ------------- FOOTER ------------- */
+.footerContainer {
+  width: 180.7rem;
+}
+
+/* ------------- TITLE ------------- */
+.titleFooter {
+  margin-bottom: 2.7rem;
+}
+
+.titleFooter p {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+
+/* ------------- MOVIELIST ------------- */
+.footerContainer button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.footerContainer img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.movieListContainer {
+  width: 267.4rem;
+  height: 28.6rem;
+  background: linear-gradient(#676571d8, #67657135);
+
+  display: flex;
+  align-items: center;
+  gap: 3.4rem;
+
+  border: 5px solid #ffbf00d8;
+  border-radius: 5px;
+
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.movieListContainer img {
+  width: 28.7rem;
+  height: 20.4rem;
+
+  scroll-snap-align: start;
+
+  transition: height 400ms, width 400ms;
+}
+
+.movieListContainer button:focus img {
+  width: 35.3rem;
+  height: 25.7rem;
+
+  border: 8px solid var(--primary-color);
+  box-shadow: 0 0 50px rgb(32, 57, 218, 0.7);
+}
+
+.footerMoviesArrowContainer {
+  display: flex;
+  align-items: center;
+  gap: 3.3rem;
+}
