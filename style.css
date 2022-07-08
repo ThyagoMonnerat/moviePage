@@ -12,20 +12,22 @@
 :root {
   font-size: 62.5%;
 
-  --primary-color: #24a3ff;
+  --primary-color: #ffea00;
 }
 
 html {
   font-family: 'sofia';
+  min-width: 190rem;
 }
 
 body {
-  height: 130rem;
-  background-image: url('./assets/godzillaBg.png');
+  height: 100%;
+  background: linear-gradient(rgb(42, 42, 42), rgb(0, 0, 0));
   background-repeat: no-repeat;
   background-size: cover;
-
   color: white;
+
+  transition: background 300ms;
 }
 
 .generalContainer {
@@ -79,7 +81,6 @@ body {
 
 a:hover p::after {
   width: 100%;
-  margin-inline: auto;
 }
 
 /* ------------- TITLE ------------- */
@@ -95,7 +96,7 @@ a:hover p::after {
 
   display: flex;
 
-  text-shadow: 0 0 25px rgb(17, 0, 255);
+  text-shadow: 0 0 25px rgb(0, 0, 0);
 }
 
 .titleContianer span::after {
@@ -145,7 +146,6 @@ a:hover p::after {
 
 .rightSideHeaderBar a:hover p::after {
   width: 100%;
-  margin-inline: auto;
 }
 
 /* ------------- SECTION ------------- */
@@ -153,14 +153,41 @@ a:hover p::after {
   width: 58.1rem;
   height: 57.5rem;
 
-  margin-bottom: 9.2rem;
+  text-align: center;
+
+  background: linear-gradient(#555252ea, #5e5e5fc7);
+}
+
+.sectionContainer article {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 1rem;
 }
 
 /* ------------- TTILEMOVIE ------------- */
 .infoSectionContent {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 4.5rem;
+  height: 27rem;
+}
+
+#movieTitle {
+  white-space: nowrap;
+  text-decoration: underline;
+  text-shadow: 0px 0px 3px black;
+}
+
+#movieDescripton {
+  white-space: nowrap;
+}
+
+#movieSinopse {
+  width: 100%;
+  height: 30rem;
+
+  border-radius: 5px;
+  padding-left: 1rem;
 }
 
 .infoSectionContent p:first-child {
@@ -282,6 +309,7 @@ a:hover p::after {
 /* ------------- FOOTER ------------- */
 .footerContainer {
   width: 180.7rem;
+  margin-top: 5rem;
 }
 
 /* ------------- TITLE ------------- */
@@ -309,13 +337,12 @@ a:hover p::after {
 .movieListContainer {
   width: 267.4rem;
   height: 28.6rem;
-  background: linear-gradient(#676571d8, #67657135);
+  background: linear-gradient(#555252ea, #5e5e5fc7);
 
   display: flex;
   align-items: center;
   gap: 3.4rem;
 
-  border: 5px solid #ffbf00d8;
   border-radius: 5px;
 
   scroll-behavior: smooth;
@@ -327,8 +354,6 @@ a:hover p::after {
 .movieListContainer img {
   width: 28.7rem;
   height: 20.4rem;
-
-  scroll-snap-align: start;
 
   transition: height 400ms, width 400ms;
 }
@@ -342,7 +367,26 @@ a:hover p::after {
 }
 
 .footerMoviesArrowContainer {
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 3.3rem;
+}
+
+#arrowButton img {
+  width: 10rem;
+  height: 10rem;
+  transition: background 0.3s;
+}
+
+#arrowButton img:active {
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar {
+  width: initial;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 0.8rem;
 }

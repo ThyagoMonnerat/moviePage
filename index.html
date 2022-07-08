@@ -24,7 +24,7 @@
             <a href=""><p>Directiories</p></a>
           </div>
           <div class="titleContianer">
-            <h1>FO<span>c</span>U<span>s</span>REEL</h1>
+            <h1>MO<span>v</span>IEP<span>a</span>GE</h1>
           </div>
           <div class="rightSideHeaderBar">
             <a href=""
@@ -40,21 +40,16 @@
       </header>
 
       <section>
+        <header>
+          <div class="infoSectionContent">
+            <p id="movieTitle"></p>
+            <p id="movieDescription"></p>
+          </div>
+        </header>
         <div class="sectionContainer">
-          <header>
-            <div class="infoSectionContent">
-              <p>GODZILLA</p>
-              <p>KINGS <span>OF THE</span> MONSTERS</p>
-            </div>
-          </header>
-
           <article>
             <div class="sinopseContainer">
-              <p>
-                &nbspconsectetur adipiscing elit. Diam quis maecenas fermentum
-                mattis eget lacus. Turpis urna nunc odio vel. Pharetra
-                scelerisque turpis
-              </p>
+              <p id="movieSinopse"></p>
             </div>
 
             <div class="rateContainer">
@@ -194,9 +189,7 @@
                 </defs>
               </svg>
             </div>
-          </article>
 
-          <footer>
             <div class="footerSectionContainer">
               <button>
                 <svg
@@ -217,7 +210,7 @@
 
               <a href=""><p>Trailer</p></a>
             </div>
-          </footer>
+          </article>
         </div>
       </section>
 
@@ -229,27 +222,191 @@
 
           <div class="footerMoviesArrowContainer">
             <div class="movieListContainer" id="movieCarousel">
-              <button><img src="./assets/movies/avengers.png" alt="" /></button>
-              <button>
-                <img src="./assets/movies/annihilation.png" alt="" />
+              <button
+                class="movie"
+                autofocus
+                name="Guardians Of The Galaxy"
+                aria-label="After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team of space heroes known as the 'Guardians of the Galaxy' to save the galaxy."
+              >
+                <img
+                  src="./assets/movies/guardians.png"
+                  alt=""
+                  class="moveImg"
+                />
+                <img
+                  src="./assets/movies/moviesBg/guardiansBg.png"
+                  class="pageMovieBg"
+                  alt=""
+                  style="display: none"
+                />
               </button>
-              <button><img src="./assets/godzillaBg.png" alt="" /></button>
-              <button>
-                <img src="./assets/movies/spiderMan.png" alt="" />
-              </button>
-              <button><img src="./assets/movies/starWars.png" alt="" /></button>
 
-              <button><img src="./assets/movies/avengers.png" alt="" /></button>
-              <button>
-                <img src="./assets/movies/annihilation.png" alt="" />
+              <button
+                class="movie"
+                name="Annihilation"
+                aria-label="A biologist's husband disappears. She puts her name forward for an expedition into an environmental disaster zone, but does not find what she's expecting. The expedition team is made up of the biologist, an anthropologist, a psychologist, a surveyor, and a linguist."
+              >
+                <img
+                  class="moveImg"
+                  src="./assets/movies/annihilation.png"
+                  alt=""
+                />
+                <img
+                  src="./assets/movies/moviesBg/annihilationBg.png"
+                  class="pageMovieBg"
+                  alt=""
+                  style="display: none"
+                />
               </button>
-              <button><img src="./assets/godzillaBg.png" alt="" /></button>
-              <button>
-                <img src="./assets/movies/spiderMan.png" alt="" />
+
+              <button
+                class="movie"
+                name="Godzilla"
+                aria-label="The crypto-zoological agency Monarch faces off against a battery of god-sized monsters, including the mighty Godzilla, who collides with Mothra, Rodan, and his ultimate nemesis, the three-headed King Ghidorah."
+              >
+                <img
+                  src="./assets/movies/godzilla.png"
+                  alt=""
+                  class="moveImg"
+                />
+                <img
+                  src="./assets/movies/moviesBg/godzillaBg.png"
+                  class="pageMovieBg"
+                  alt=""
+                  style="display: none"
+                />
               </button>
-              <button><img src="./assets/movies/starWars.png" alt="" /></button>
+
+              <button
+                class="movie"
+                name="Spider Man"
+                aria-label="With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man."
+              >
+                <img
+                  class="moveImg"
+                  src="./assets/movies/spiderMan.png"
+                  alt=""
+                />
+                <img
+                  src="./assets/movies/moviesBg/spiderManBg.png"
+                  class="pageMovieBg"
+                  alt=""
+                  style="display: none"
+                />
+              </button>
+
+              <button
+                class="movie"
+                name="Star Wars"
+                aria-label="Jedi Master-in-hiding Luke Skywalker unwillingly attempts to guide young hopeful Rey in the ways of the force, while Leia, former princess turned general, attempts to lead what is left of the Resistance away from the ruthless tyrannical grip of the First Order."
+              >
+                <img
+                  src="./assets/movies/starWars.png"
+                  alt=""
+                  class="moveImg"
+                />
+                <img
+                  src="./assets/movies/moviesBg/starWarBg.png"
+                  class="pageMovieBg"
+                  alt=""
+                  style="display: none"
+                />
+              </button>
+
+              <button
+                class="movie"
+                autofocus
+                name="Guardians Of The Galaxy"
+                aria-label="After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team of space heroes known as the 'Guardians of the Galaxy' to save the galaxy."
+              >
+                <img
+                  src="./assets/movies/guardians.png"
+                  alt=""
+                  class="moveImg"
+                />
+                <img
+                  src="./assets/movies/moviesBg/guardiansBg.png"
+                  class="pageMovieBg"
+                  alt=""
+                  style="display: none"
+                />
+              </button>
+
+              <button
+                class="movie"
+                name="Annihilation"
+                aria-label="A biologist's husband disappears. She puts her name forward for an expedition into an environmental disaster zone, but does not find what she's expecting. The expedition team is made up of the biologist, an anthropologist, a psychologist, a surveyor, and a linguist."
+              >
+                <img
+                  class="moveImg"
+                  src="./assets/movies/annihilation.png"
+                  alt=""
+                />
+                <img
+                  src="./assets/movies/moviesBg/annihilationBg.png"
+                  class="pageMovieBg"
+                  alt=""
+                  style="display: none"
+                />
+              </button>
+
+              <button
+                class="movie"
+                name="Godzilla"
+                aria-label="The crypto-zoological agency Monarch faces off against a battery of god-sized monsters, including the mighty Godzilla, who collides with Mothra, Rodan, and his ultimate nemesis, the three-headed King Ghidorah."
+              >
+                <img
+                  src="./assets/movies/godzilla.png"
+                  alt=""
+                  class="moveImg"
+                />
+                <img
+                  src="./assets/movies/moviesBg/godzillaBg.png"
+                  class="pageMovieBg"
+                  alt=""
+                  style="display: none"
+                />
+              </button>
+
+              <button
+                class="movie"
+                name="Spider Man"
+                aria-label="With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man."
+              >
+                <img
+                  class="moveImg"
+                  src="./assets/movies/spiderMan.png"
+                  alt=""
+                />
+                <img
+                  src="./assets/movies/moviesBg/spiderManBg.png"
+                  class="pageMovieBg"
+                  alt=""
+                  style="display: none"
+                />
+              </button>
+
+              <button
+                class="movie"
+                name="Star Wars"
+                aria-label="Jedi Master-in-hiding Luke Skywalker unwillingly attempts to guide young hopeful Rey in the ways of the force, while Leia, former princess turned general, attempts to lead what is left of the Resistance away from the ruthless tyrannical grip of the First Order."
+              >
+                <img
+                  src="./assets/movies/starWars.png"
+                  alt=""
+                  class="moveImg"
+                />
+                <img
+                  src="./assets/movies/moviesBg/starWarBg.png"
+                  class="pageMovieBg"
+                  alt=""
+                  style="display: none"
+                />
+              </button>
             </div>
-            <button onclick="slideMovies()" id="arrowButton"><img src="./assets/expandArrow.png" alt="" /></button>
+            <button id="arrowButton">
+              <img src="./assets/expandArrow.png" alt="" />
+            </button>
           </div>
         </div>
       </footer>
